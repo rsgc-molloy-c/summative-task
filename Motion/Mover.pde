@@ -2,7 +2,7 @@
 // more interesting forms of motion.
 //
 // Progression:
-// 1. Motion 101 – location and velocity
+// 1. Motion 101 – location and velocity
 // 2. Motion w/ Acceleration (Constant)
 //    Velocity - rate of change of location
 //    Acceleration – rate of change of velocity
@@ -18,7 +18,7 @@ class Mover {
   RVector acceleration;
   int initialx;
   int initialy;
-  // Constructor – use this to initialize a Mover instance
+  // Constructor – use this to initialize a Mover instance
   Mover() {
     
     // Movers appear in centre of window and have zero velocity at first

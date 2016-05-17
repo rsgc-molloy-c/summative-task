@@ -19,7 +19,7 @@ void setup() {
 void draw() {
 
   // Clear the background
-  background(255);
+  //background(255);
 
   // Make the mover move!
   for (int i = 0; i < movers.length; i+=1) {
@@ -27,4 +27,11 @@ void draw() {
     movers[i].checkEdges();
     movers[i].display();
   }
+}
+
+void mousePressed(){
+  
+  background(2);
+  
+  
 }
