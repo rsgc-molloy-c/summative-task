@@ -16,12 +16,13 @@ class Mover {
   RVector location;
   RVector velocity;
   RVector acceleration;
-  
+  int initialx;
+  int initialy;
   // Constructor – use this to initialize a Mover instance
   Mover() {
     
     // Movers appear in centre of window and have zero velocity at first
-    location = new RVector( random(width), random(height) );
+    location = new RVector( initialx, initialy );
     velocity = new RVector(0, 0);  // object at rest when instantiated
   }
   
@@ -59,7 +60,7 @@ class Mover {
     ellipse(location.x, location.y, 25, 25);
     
   }
-  
+
   // wrap around edges
   void checkEdges() {
     

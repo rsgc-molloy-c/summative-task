@@ -1,5 +1,5 @@
 // Create a space in memory for many Mover objects
-Mover movers[] = new Mover[25];
+Bouncer movers[] = new Bouncer[1];
 
 // Runs once
 void setup() {
@@ -10,7 +10,7 @@ void setup() {
 
   // Actually make an instance of a Mover
   for (int i = 0; i < movers.length; i+=1) {
-    movers[i] = new Mover();
+    movers[i] = new Bouncer();
   }
   
 }
