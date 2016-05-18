@@ -1,37 +1,34 @@
 // Create a space in memory for many Mover objects
-Bouncer movers[] = new Bouncer[1];
+int amount = 1;
+Bouncer movers = new Bouncer(100,100,200,200);
 
 // Runs once
 void setup() {
 
   // Create a white background
-  size(640, 360);
+  size(800, 800);
   background(255);
 
-  // Actually make an instance of a Mover
-  for (int i = 0; i < movers.length; i+=1) {
-    movers[i] = new Bouncer();
-  }
-  
+ 
+ //  for (int i = 0; i < movers.length; i++) {
+    movers = new Bouncer(100,100,200,200);
+//  }
+
 }
 
 // Runs forever
 void draw() {
-
+  
+   // Actually make an instance of a Mover
+ 
   // Clear the background
-  //background(255);
+  
+  background(255);
 
   // Make the mover move!
-  for (int i = 0; i < movers.length; i+=1) {
-    movers[i].update();
-    movers[i].checkEdges();
-    movers[i].display();
-  }
-}
-
-void mousePressed(){
-  
-  background(2);
-  
-  
+ // for (int i = 0; i < movers.length; i+=1) {
+    movers.update();
+    movers.checkEdges();
+    movers.display();
+ // }
 }
