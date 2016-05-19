@@ -1,6 +1,6 @@
 // Create a space in memory for many Mover objects
 int amount = 1;
-Bouncer movers = new Bouncer(150,700,200,200);
+Bouncer movers = new Bouncer(150,700,100,500);
 
 // Runs once
 void setup() {
@@ -11,7 +11,7 @@ void setup() {
 
  
  //  for (int i = 0; i < movers.length; i++) {
-    movers = new Bouncer(100,100,200,200);
+    movers = new Bouncer(100,100,200, 200);
 //  }
 
 }
