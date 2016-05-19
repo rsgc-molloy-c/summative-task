@@ -1,12 +1,12 @@
 // Create a space in memory for many Mover objects
 int amount = 1;
-Bouncer movers = new Bouncer(100,100,200,200);
+Bouncer movers = new Bouncer(150,700,200,200);
 
 // Runs once
 void setup() {
 
   // Create a white background
-  size(800, 800);
+  size(600, 600);
   background(255);
 
  
