@@ -18,13 +18,13 @@ class Bouncer {
       this.y1 = y1;
        this.y2 = y2;
     location = new RVector(x1, y1);
-    velocity = new RVector(0.01, 1);
-    acceleration = new RVector(0.0001, 0.0001);
+    velocity = new RVector(-0.07, -1);
+    acceleration = new RVector(0, 0);
     
     
     location2 = new RVector(x2, y2);
     velocity2 = new RVector(0.01, 1);
-    acceleration2 = new RVector(0.0001, 0.0001);
+    acceleration2 = new RVector(0, 0);
   }
   
   // update position
@@ -61,10 +61,11 @@ class Bouncer {
    
    
     stroke(0);
-    fill(175);
-   
-  
+    
+    fill(0,255,0);
       ellipse(location.x, location.y, 16, 16);
+      
+      fill(0,0,255);
      ellipse(location2.x, location2.y, 16, 16);
    
   
@@ -109,7 +110,7 @@ class Bouncer {
       velocity2.y *= -1;
     }
     
-    
+ 
     
   }
 }
