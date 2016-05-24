@@ -72,7 +72,7 @@ class Bouncer {
    
   
  
-   // ellipse(location.x, location.y, 16, 16);
+   
   }
   
   // check for edges
