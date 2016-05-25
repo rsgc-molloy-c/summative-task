@@ -7,17 +7,29 @@ class Player {
  // constructor
   Player() {
     
-    location = new RVector(500, 100);
+    location = new RVector(100, 100);
     velocity = new RVector(0, 0);
-  
+    acceleration = new RVector(0, 0);
     
   }
   
   // update position
   void update() {
+    RVector mouse = new RVector(0, 0);
+     RVector direction = RVector.sub(mouse, location);
+    
+    // Normalize and scale the direction vecgtor
+    direction.normalize();
+    direction.mult(0.1);
+    
+    // Accelerate based on direction vector
     
     
-   
+    // update position
+    velocity.add(acceleration);
+    // Move the ball according to it's speed
+     velocity.add(acceleration);
+    location.add(velocity);
   }
   
   // show the object

@@ -27,41 +27,39 @@ void draw() {
   // Clear the background
 
   background(255);
-  
-  if(level == 0){
-    fill(0,255,255);
- guy.update();
- guy.checkEdges();
- guy.display();
-    
-    
+
+  if (level == 0) {
+    fill(0, 255, 255);
+    guy.update();
+    guy.checkEdges();
+    guy.display();
+
+
     textSize(32);
     fill(0, 102, 153);
-text("Gravity", width/5, height/4); 
-textSize(16);
-text("Level 0", width/5, height/4+25); 
-text("Move yourself using the arrow keys to get from one box ", width/5, height/4+65);
-text("to another, do not get hit by any other object or you will", width/5, height/4+80);
-fill(255, 0, 0);
-text("lose!", width/5, height/4+95);
-
-
-
+    text("Gravity", width/5, height/4); 
+    textSize(16);
+    text("Level 0", width/5, height/4+25); 
+    text("Move yourself using the arrow keys to get from one box ", width/5, height/4+65);
+    text("to another, do not get hit by any other object or you will", width/5, height/4+80);
+    fill(255, 0, 0);
+    text("lose!", width/5, height/4+95);
   }
-  
- if(level == 1){ 
-fill(0,0,255);
- ellipse(width/2, height/2, 16, 16);
- fill(0,255,0);
- lvl1.update();
- lvl1.checkEdges();
- lvl1.display();}
- 
- if(level == 2){
-  lvl2.update();
-  lvl2.checkEdges();
-  lvl2.display();}
-  
+
+  if (level == 1) { 
+    fill(0, 0, 255);
+    ellipse(width/2, height/2, 16, 16);
+    fill(0, 255, 0);
+    lvl1.update();
+    lvl1.checkEdges();
+    lvl1.display();
+  }
+
+  if (level == 2) {
+    lvl2.update();
+    lvl2.checkEdges();
+    lvl2.display();
+  }
 }
 
 
@@ -70,24 +68,25 @@ void keyPressed() {
   {
     if (key == 'w')
     {
-      if(level != 0)
-      level --;
+      if (level != 0)
+        level --;
     } else if (key == 's')
     {
       level ++;
     }
   }
-  if(key == CODED){
-   if (keyCode == UP) {
-      guy.velocity.y = 2;
-    } else if (keyCode == DOWN) {
+  if (key == CODED) {
+    if (keyCode == UP) {
       guy.velocity.y = -2;
-    }  
-    
-    
-    
-  }
-  
-  
-  
+      guy.velocity.x = 0;
+    } else if (keyCode == DOWN) {
+      guy.velocity.y = 2;
+      guy.velocity.x = 0;
+    } else if (keyCode == LEFT) {
+      guy.velocity.x = -2;
+      guy.velocity.y = 0;
+    } else if (keyCode == RIGHT) {
+      guy.velocity.x = 2;
+      guy.velocity.y = 0;
+    }}
 }
