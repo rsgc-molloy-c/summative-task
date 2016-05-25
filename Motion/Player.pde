@@ -7,7 +7,7 @@ class Player {
  // constructor
   Player() {
     
-    location = new RVector(100, 100);
+    location = new RVector(50, 25);
     velocity = new RVector(0, 0);
     acceleration = new RVector(0, 0);
     

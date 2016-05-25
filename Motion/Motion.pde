@@ -70,6 +70,21 @@ fill(0, 255, 255);
     lvl2.checkEdges();
     lvl2.display();
   }
+  
+  
+  
+  
+  if(guy.location.x > 500 && guy.location.y > 500){
+    level ++;
+    guy.location.x = 50;
+    guy.location.y = 25;
+    guy.velocity.x = 0;
+    guy.velocity.y = 0;
+    
+    
+  }
+  
+  
 }
 
 
