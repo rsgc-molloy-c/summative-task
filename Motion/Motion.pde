@@ -15,24 +15,34 @@ void setup() {
 
   //lvl2 = new Bouncer(100, 100, 200, 200);
   //Mover lvl1 = new Mover();
+ 
   Player guy= new Player();
+   
+
 }
 
 // Runs forever
 void draw() {
-
-
-  // Actually make an instance of a Mover
-
-  // Clear the background
-
+ 
   background(255);
-
-  if (level == 0) {
-    fill(0, 255, 255);
-    guy.update();
+  fill(0, 255, 0);
+ rect(0,0,100,50);
+ fill(255, 0, 0);
+ rect(width-100,height-50,100,50);
+ 
+ 
+ 
+ 
+ 
+fill(0, 255, 255);
+  guy.update();
     guy.checkEdges();
     guy.display();
+
+
+  if (level == 0) {
+    
+   
 
 
     textSize(32);
