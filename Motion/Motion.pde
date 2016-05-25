@@ -2,7 +2,8 @@
 // Create a space in memory for many Mover objects
 int amount = 1;
 int level = 0;
-Bouncer lvl2 = new Bouncer(150, 700, 200, 500);
+Level_2 lvl2 = new Level_2(0, 0, 0, 0);
+Bouncer lvl3 = new Bouncer(0, 0, 0, 0);
 Mover lvl1 = new Mover();
 Player guy= new Player();
 // Runs once
@@ -12,9 +13,9 @@ void setup() {
   size(600, 600);
   background(255);
 
-
-  //lvl2 = new Bouncer(100, 100, 200, 200);
-  //Mover lvl1 = new Mover();
+ lvl2 = new Level_2(width/3, height/3, width/2, height/2);
+  lvl3 = new Bouncer(100, 100, 200, 200);
+  Mover lvl1 = new Mover();
  
   Player guy= new Player();
    
@@ -65,10 +66,17 @@ fill(0, 255, 255);
     lvl1.display();
   }
 
-  if (level == 2) {
+ if (level == 2) {
     lvl2.update();
     lvl2.checkEdges();
     lvl2.display();
+  }
+
+
+  if (level == 3) {
+    lvl3.update();
+    lvl3.checkEdges();
+    lvl3.display();
   }
   
   
