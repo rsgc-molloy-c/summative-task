@@ -64,11 +64,11 @@ fill(0, 255, 255);
     lvl1.update();
     lvl1.checkEdges();
     lvl1.display();
-    print(floor(guy.location.x));
-    print(floor(lvl1.location.x));
+ 
    for(int i = 0; i <= 360; i+=36){
      for(int z = 0; z <= 360; z+=36){
-    if(floor(guy.location.x + cos(i)*8) == floor(lvl1.location.x + cos(z)*8) && floor(guy.location.y + sin(i)*8) == floor(lvl1.location.y + sin(z)*8) ){
+    if(floor(guy.location.x + cos(i)*8) >= floor(lvl1.location.x + cos(z)*25) &&  floor(guy.location.x + cos(i)*8) <= floor(lvl1.location.x + cos(-z)*25)&&
+    floor(guy.location.y + sin(i)*8) <= floor(lvl1.location.y + sin(z)*25) && floor(guy.location.y + sin(i)*8) >= floor(lvl1.location.y + sin(-z)*25) ){
       
       level =0;
     

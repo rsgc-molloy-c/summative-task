@@ -62,7 +62,7 @@ class Level_2 {
     stroke(0);
     
     fill(0,255,0);
-      ellipse(location.x, location.y, 16, 16);
+      ellipse(location.x, location.y, 50, 50);
       
       fill(0,0,255);
      ellipse(location2.x, location2.y, 16, 16);

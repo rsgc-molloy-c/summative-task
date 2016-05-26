@@ -40,9 +40,10 @@ class Mover {
     
    
   
-     ellipse(location.x, location.y, 16, 16);
+ //    ellipse(location.x, location.y, 16, 16);
    
   
+       ellipse(location.x, location.y, 50, 50);
    
   
  
