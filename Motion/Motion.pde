@@ -152,7 +152,7 @@ fill(0, 255, 255);
   
   
   
-  if(guy.location.x > 500 && guy.location.y > 500){
+  if(guy.location.x > 500 && guy.location.y > 550){
     level ++;
     guy.location.x = 50;
     guy.location.y = 25;
