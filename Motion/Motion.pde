@@ -3,8 +3,8 @@
 int amount = 1;
 int level = 0;
 Level_2 lvl2 = new Level_2(0, 0, 0, 0);
-Bouncer lvl3 = new Bouncer(0, 0, 0, 0);
-Mover lvl1 = new Mover();
+Level_3 lvl3 = new Level_3(0, 0, 0, 0);
+Level_1 lvl1 = new Level_1();
 Player guy= new Player();
 // Runs once
 void setup() {
@@ -14,8 +14,8 @@ void setup() {
   background(255);
 
  lvl2 = new Level_2(width/3, height/3, width/2, height/2);
-  lvl3 = new Bouncer(100, 100, 200, 200);
-  Mover lvl1 = new Mover();
+  lvl3 = new Level_3(100, 100, 200, 200);
+   lvl1 = new Level_1();
  
   Player guy= new Player();
    

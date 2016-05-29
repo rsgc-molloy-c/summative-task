@@ -1,4 +1,4 @@
-class Bouncer {
+class Level_3 {
   
   RVector location;
   RVector velocity;
@@ -12,7 +12,7 @@ class Bouncer {
  int x2;
  int y2;
  // constructor
-  Bouncer(int x1, int y1, int x2,int y2) {
+  Level_3(int x1, int y1, int x2,int y2) {
     this.x1 = x1;
      this.x2 = x2;
       this.y1 = y1;

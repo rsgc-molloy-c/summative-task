@@ -1,11 +1,11 @@
-class Mover {
+class Level_1 {
   
   RVector location;
   RVector velocity;
  RVector acceleration;
  
  // constructor
- Mover () {
+ Level_1 () {
     
     location = new RVector(100, 100);
     velocity = new RVector(0, 2);
