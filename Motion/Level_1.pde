@@ -1,3 +1,4 @@
+//one ellipse is set to accelerate toward the center
 class Level_1 {
   
   RVector location;

@@ -40,7 +40,7 @@ fill(0, 255, 255);
     guy.checkEdges();
     guy.display();
 
-
+//strt screen
   if (level == 0) {
     
    
@@ -56,7 +56,7 @@ fill(0, 255, 255);
     fill(255, 0, 0);
     text("lose!", width/5, height/4+95);
   }
-
+//first level
   if (level == 1) { 
     fill(0, 102, 153);
      text("One stationary object with a very high mass", width/5,35);
@@ -83,7 +83,7 @@ fill(0, 255, 255);
     }
    }
   }
-
+//second level
  if (level == 2) {
    fill(0, 102, 153);
      text("One moving object with a very high mass", width/5,35);
@@ -114,7 +114,7 @@ fill(0, 255, 255);
     
   }
 
-
+//final level
   if (level == 3) {
        fill(0, 102, 153);
 
@@ -168,7 +168,7 @@ fill(0, 255, 255);
   }
   
   
-  
+  //changes the level
   if(guy.location.x > 500 && guy.location.y > 550){
     level ++;
     guy.location.x = 50;

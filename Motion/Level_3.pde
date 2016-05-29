@@ -1,3 +1,4 @@
+//both ellipses accelerate towards one another
 class Level_3 {
   
   RVector location;
