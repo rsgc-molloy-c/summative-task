@@ -58,6 +58,9 @@ fill(0, 255, 255);
   }
 
   if (level == 1) { 
+    fill(0, 102, 153);
+     text("One stationary object with a very high mass", width/5,35);
+    text("One object with low mass being affected by the large mass", width/5, 50);
     fill(0, 0, 255);
     ellipse(width/2, height/2, 16, 16);
     fill(0, 255, 0);
@@ -82,6 +85,9 @@ fill(0, 255, 255);
   }
 
  if (level == 2) {
+   fill(0, 102, 153);
+     text("One moving object with a very high mass", width/5,35);
+    text("One object with low mass being affected by the large mass", width/5, 50);
     lvl2.update();
     lvl2.checkEdges();
     lvl2.display();
@@ -110,6 +116,10 @@ fill(0, 255, 255);
 
 
   if (level == 3) {
+       fill(0, 102, 153);
+
+    text("Two objects with simular mass affecting eachother", width/5,35);
+    
     lvl3.update();
     lvl3.checkEdges();
     lvl3.display();
@@ -148,7 +158,14 @@ fill(0, 255, 255);
     
     
   }
+  if(level == 4){
+  fill(255, 0, 0);
+  text("You Win!", width/5, height/4+65);
   
+  if(guy.location.x > 500 && guy.location.y > 550)
+  level = -1;
+  
+  }
   
   
   
