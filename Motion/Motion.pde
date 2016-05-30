@@ -213,17 +213,7 @@ fill(0, 255, 255);
 
 
 void keyPressed() {
-  if (keyPressed)
-  {
-    if (key == 'w')
-    {
-      if (level != 0)
-        level --;
-    } else if (key == 's')
-    {
-      level ++;
-    }
-  }
+  
   if (key == CODED) {
     if (keyCode == UP) {
       guy.velocity.y = -2;
