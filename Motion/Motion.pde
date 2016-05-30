@@ -82,6 +82,22 @@ fill(0, 255, 255);
     }
     }
    }
+   for(int i = 0; i <= 360; i+=36){
+     for(int z = 0; z <= 360; z+=36){
+    if(floor(guy.location.x + cos(i)*8) >= floor(height/2 + cos(z)*8) &&  floor(guy.location.x + cos(i)*8) <= floor(height/2 + cos(-z)*8)&&
+    floor(guy.location.y + sin(i)*8) <= floor(height/2  + sin(z)*8) && floor(guy.location.y + sin(i)*8) >= floor(height/2  + sin(-z)*8) ){
+      guy.location.x = 50;
+    guy.location.y = 25;
+    guy.velocity.x = 0;
+    guy.velocity.y = 0;
+      level =0;
+    
+    
+    }
+    }
+   }
+   
+   
   }
 //second level
  if (level == 2) {
@@ -106,7 +122,20 @@ fill(0, 255, 255);
     }
     }
    }
+     for(int i = 0; i <= 360; i+=36){
+     for(int z = 0; z <= 360; z+=36){
+    if(floor(guy.location.x + cos(i)*8) >= floor(lvl2.location2.x + cos(z)*8) &&  floor(guy.location.x + cos(i)*8) <= floor(lvl2.location2.x + cos(-z)*8)&&
+    floor(guy.location.y + sin(i)*8) <= floor(lvl2.location2.y + sin(z)*8) && floor(guy.location.y + sin(i)*8) >= floor(lvl2.location2.y + sin(-z)*8) ){
+      guy.location.x = 50;
+    guy.location.y = 25;
+    guy.velocity.x = 0;
+    guy.velocity.y = 0;
+      level =0;
     
+    
+    }
+    }
+   }
     
     
     
